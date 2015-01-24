@@ -36,11 +36,11 @@ Solution Matrix:
 Remaining Numbers: 5
 Total Moves: 2
 
-NumberOfArguments	Argument		Details
-0   				[None]			Creates a random matrix between 3x3 and 11x11 with every move outputted
-1					-v				Creates a random matrix between 3x3 and 11x11 with no moves outputted
-1					[Text File]		Creates a matrix from a text file with every move outputted
-2					[Text File] 	–v	Creates a matrix from a text file with no moves outputted
-2					r [number] 		Creates a random matrix with dimensions specified by [number] and outputs every move
-3					r [number] -v	Creates a random matrix with dimensions specified by [number] and outputs no in-between moves.
+Argument		Details
+[None]			Creates a random matrix between 3x3 and 11x11 with every move outputted
+-v				Creates a random matrix between 3x3 and 11x11 with no moves outputted
+[Text File]		Creates a matrix from a text file with every move outputted
+[Text File] –v	Creates a matrix from a text file with no moves outputted
+r [number] 		Creates a random matrix with dimensions specified by [number] and outputs every move
+r [number] -v	Creates a random matrix with dimensions specified by [number] and outputs no in-between moves.
 
