@@ -3,44 +3,80 @@ Romensio is a made up game in which the objective is to eliminate adjacent seque
 
 The matrices are squares but can be of any size n. The user can use a variety of different command line arguments as specified by the table below. The user can create random matrices with specified sizes or specific matrices from a given text file.
 
-EXAMPLE OUTPUT ON A RANDOM 3x3 MATRIX:
+EXAMPLE OUTPUT ON A RANDOM 4x4 MATRIX:
 
-Creating a random 3x3 matrix...
+Creating a random 4x4 matrix...
 
 Initial Matrix:
-1 8 5 
-7 5 6 
-5 4 8 
+2 5 8 7 
+4 2 1 7 
+5 4 4 1 
+6 4 1 2 
 Move 1:
-1 8   
-7   6 
-5 4 8 
+  5 8 7 
+  2 1 7 
+5   4 1 
+6 4 1 2 
 After Numbers Fall on Move 1:
-1     
-7 8 6 
-5 4 8 
+    8 7 
+  5 1 7 
+5 2 4 1 
+6 4 1 2 
 Move 2:
-1     
-7 8   
-5   8 
+    8 7 
+    1 7 
+  2 4 1 
+6 4 1 2 
 After Numbers Fall on Move 2:
-1     
-7     
-5 8 8 
+    8 7 
+    1 7 
+  2 4 1 
+6 4 1 2 
+Move 3:
+      7 
+      7 
+  2 4   
+6 4 1 2 
+After Numbers Fall on Move 3:
+        
+      7 
+  2 4 7 
+6 4 1 2 
+Move 4:
+        
+      7 
+  2 4   
+6 4     
+After Numbers Fall on Move 4:
+        
+        
+  2     
+6 4 4 7 
+Move 5:
+        
+        
+  2     
+    4 7 
+After Numbers Fall on Move 5:
+        
+        
+        
+  2 4 7 
 
 Solution Matrix:
-1     
-7     
-5 8 8 
+        
+        
+        
+  2 4 7 
 
-Remaining Numbers: 5
-Total Moves: 2
+Remaining Numbers: 3
+Total Moves: 5
 
-Argument		Details
-[None]			Creates a random matrix between 3x3 and 11x11 with every move outputted
--v				Creates a random matrix between 3x3 and 11x11 with no moves outputted
-[Text File]		Creates a matrix from a text file with every move outputted
-[Text File] –v	Creates a matrix from a text file with no moves outputted
-r [number] 		Creates a random matrix with dimensions specified by [number] and outputs every move
-r [number] -v	Creates a random matrix with dimensions specified by [number] and outputs no in-between moves.
+Argument: Details
+[No Arguments]: Creates a random matrix between 3x3 and 11x11 with every move outputted
+-v:	Creates a random matrix between 3x3 and 11x11 with no moves outputted
+[Text File]: Creates a matrix from a text file with every move outputted
+[Text File] –v: Creates a matrix from a text file with no moves outputted
+r [number]: Creates a random matrix with dimensions specified by [number] and outputs every move
+r [number] -v: Creates a random matrix with dimensions specified by [number] and outputs no in-between moves.
 
